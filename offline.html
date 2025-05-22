@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesteś offline</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-100 flex flex-col items-center justify-center min-h-screen text-center p-4">
+<div class="bg-white p-8 md:p-12 rounded-2xl shadow-2xl max-w-md w-full">
+    <svg class="w-24 h-24 text-red-500 mx-auto mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636a9 9 0 11-12.728 0M12 12h.01M12 3v1m0 16v1m8.071-10.071h-1M3.929 11.929H2.929m15.356.815l-.707.707M6.343 17.657l-.707.707m12.02-12.02l-.707-.707M6.343 6.343l-.707-.707"></path></svg>
+    <h1 class="text-4xl font-bold text-gray-800 mb-3">Oops! Jesteś offline.</h1>
+    <p class="text-gray-600 text-lg mb-8">Wygląda na to, że nie masz połączenia z internetem. Sprawdź swoje połączenie i spróbuj ponownie.</p>
+    <p class="text-gray-500 text-sm">Niektóre funkcje aplikacji mogą być niedostępne w trybie offline. Możliwe, że wyświetlane są ostatnio zapisane dane.</p>
+    <button onclick="window.location.href='/'" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-xl shadow-md transition duration-150 ease-in-out transform hover:scale-105">
+        Spróbuj ponownie
+    </button>
+</div>
+</body>
+</html>

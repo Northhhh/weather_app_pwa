@@ -1,0 +1,21 @@
+<div id="weather-detail-content" class="bg-white p-6 rounded-lg shadow-lg">
+    <h2 class="text-3xl font-bold text-gray-800 mb-2">{cityName}</h2>
+    <p class="text-gray-600 mb-4">{date}</p>
+
+    <div class="flex items-center mb-4">
+        <img src="https://openweathermap.org/img/wn/{icon}@2x.png" alt="Weather icon" class="w-20 h-20 mr-4">
+        <div>
+            <p class="text-5xl font-bold text-gray-800">{temperature}°C</p>
+            <p class="text-xl text-gray-600 capitalize">{description}</p>
+        </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
+        <p><strong>Odczuwalna:</strong> {feelsLike}°C</p>
+        <p><strong>Wiatr:</strong> {windSpeed} m/s</p>
+        <p><strong>Wilgotność:</strong> {humidity}%</p>
+        <p><strong>Ciśnienie:</strong> {pressure} hPa</p>
+        <p><strong>Wschód słońca:</strong> {sunrise}</p>
+        <p><strong>Zachód słońca:</strong> {sunset}</p>
+    </div>
+</div>

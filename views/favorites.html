@@ -1,0 +1,20 @@
+<div class="max-w-lg mx-auto">
+    <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">Ulubione Miasta</h1>
+
+    <div class="bg-white p-6 rounded-lg shadow-lg mb-8">
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">Dodaj nowe ulubione miasto</h2>
+        <form id="add-favorite-form">
+            <input type="text" id="favorite-city-input" placeholder="Nazwa miasta" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 mb-4" required>
+            <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-md transition duration-150">
+                Dodaj do ulubionych
+            </button>
+        </form>
+    </div>
+
+    <div id="favorites-list-container" class="bg-white p-6 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-semibold text-gray-700 mb-4">Twoje ulubione miasta</h2>
+        <ul id="favorites-list" class="space-y-3">
+            <li class="text-gray-500 italic">Brak zapisanych ulubionych miast.</li>
+        </ul>
+    </div>
+</div>
